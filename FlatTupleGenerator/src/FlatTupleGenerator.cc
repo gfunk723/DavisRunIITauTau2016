@@ -2591,7 +2591,7 @@ void FlatTupleGenerator::handleSVFitCall(const edm::Event& iEvent, const edm::Ev
   /* set the fitted MET */
 
   TLorentzVector temp_SVFitted_MET(0.,0.,0.,0.);
-  temp_SVFitted_MET.SetPxPyPzE(svFitAlgorithm.fittedMET().x(),svFitAlgorithm.fittedMET().y(),svFitAlgorithm.fittedMET().z(),0.); 
+  temp_SVFitted_MET.SetPxPyPzE(0.,0.,0.,0.);
 
   if(METtoUSE == "MVAMET_CORR")
   {
