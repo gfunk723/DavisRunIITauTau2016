@@ -47,6 +47,27 @@ sampleInfo = []
 # 2017 Moriond MonoH Backgrounds   #
 ####################################
 
+
+aPSet = cms.PSet(
+    DataSet = cms.string(""),
+    EventTotal = cms.int32(),
+    NumberOfLumis = cms.int32(),
+    MaxLumiBlock = cms.int32(),
+    EventType = cms.string("MC"),
+    KeyName = cms.string(""),
+    DataCard = cms.string(""),
+    CrossSection = cms.double(),
+    FilterEff = cms.double(1.0),
+    CodeVersion = cms.double(3.0),
+    ProductionInfo = cms.string("Run2016_B_C_D_E_F_G_H"),
+    RecoilCorrection = cms.string("NONE"),
+    MetSystematicType = cms.string("NONE"),
+    KeepTheoryScaleFactors = cms.bool(False),
+    HLTversion = cms.string("HLT")
+       )
+sampleInfo.append(aPSet)
+
+
 aPSet = cms.PSet(
     DataSet = cms.string("/DYJetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6_ext2-v1/MINIAODSIM"),
     EventTotal = cms.int32(96658943),
@@ -190,6 +211,104 @@ aPSet = cms.PSet(
        )
 sampleInfo.append(aPSet)
 
+
+aPSet = cms.PSet(
+    DataSet = cms.string("/TTZToLLNuNu_M-10_TuneCUETP8M1_13TeV-amcatnlo-pythia8/RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6_ext1-v1/MINIAODSIM"),
+    EventTotal = cms.int32(1992438),
+    NumberOfLumis = cms.int32(10542),
+    MaxLumiBlock = cms.int32(10582),
+    EventType = cms.string("MC"),
+    KeyName = cms.string("TTZToLLNuNu_M-10ext1"),
+    DataCard = cms.string("TT"),
+    CrossSection = cms.double(0.2529),
+    FilterEff = cms.double(1.0),
+    CodeVersion = cms.double(3.0),
+    ProductionInfo = cms.string("Run2016_B_C_D_E_F_G_H"),
+    RecoilCorrection = cms.string("NONE"),
+    MetSystematicType = cms.string("NONE"),
+    KeepTheoryScaleFactors = cms.bool(False),
+    HLTversion = cms.string("HLT")
+       )
+sampleInfo.append(aPSet)
+
+
+aPSet = cms.PSet(
+    DataSet = cms.string("/TTZToLLNuNu_M-10_TuneCUETP8M1_13TeV-amcatnlo-pythia8/RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6_ext2-v1/MINIAODSIM"),
+    EventTotal = cms.int32(5982035),
+    NumberOfLumis = cms.int32(34578),
+    MaxLumiBlock = cms.int32(34682),
+    EventType = cms.string("MC"),
+    KeyName = cms.string("TTZToLLNuNu_M-10ext2"),
+    DataCard = cms.string("TT"),
+    CrossSection = cms.double(0.2529),
+    FilterEff = cms.double(1.0),
+    CodeVersion = cms.double(3.0),
+    ProductionInfo = cms.string("Run2016_B_C_D_E_F_G_H"),
+    RecoilCorrection = cms.string("NONE"),
+    MetSystematicType = cms.string("NONE"),
+    KeepTheoryScaleFactors = cms.bool(False),
+    HLTversion = cms.string("HLT")
+       )
+sampleInfo.append(aPSet)
+
+
+aPSet = cms.PSet(
+    DataSet = cms.string("/TTZToLLNuNu_M-10_TuneCUETP8M1_13TeV-amcatnlo-pythia8/RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6_ext3-v1/MINIAODSIM"),
+    EventTotal = cms.int32(5934228),
+    NumberOfLumis = cms.int32(30316),
+    MaxLumiBlock = cms.int32(30652),
+    EventType = cms.string("MC"),
+    KeyName = cms.string("TTZToLLNuNu_M-10ext3"),
+    DataCard = cms.string("TT"),
+    CrossSection = cms.double(0.2529),
+    FilterEff = cms.double(1.0),
+    CodeVersion = cms.double(3.0),
+    ProductionInfo = cms.string("Run2016_B_C_D_E_F_G_H"),
+    RecoilCorrection = cms.string("NONE"),
+    MetSystematicType = cms.string("NONE"),
+    KeepTheoryScaleFactors = cms.bool(False),
+    HLTversion = cms.string("HLT")
+       )
+sampleInfo.append(aPSet)
+
+
+aPSet = cms.PSet(
+    DataSet = cms.string("/TTWJetsToLNu_TuneCUETP8M1_13TeV-amcatnloFXFX-madspin-pythia8/RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6_ext1-v3/MINIAODSIM"),
+    EventTotal = cms.int32(2160168),
+    NumberOfLumis = cms.int32(16555),
+    MaxLumiBlock = cms.int32(16567),
+    EventType = cms.string("MC"),
+    KeyName = cms.string("TTWJetsToLNu"),
+    DataCard = cms.string("TT"),
+    CrossSection = cms.double(0.2043),
+    FilterEff = cms.double(1.0),
+    CodeVersion = cms.double(3.0),
+    ProductionInfo = cms.string("Run2016_B_C_D_E_F_G_H"),
+    RecoilCorrection = cms.string("NONE"),
+    MetSystematicType = cms.string("NONE"),
+    KeepTheoryScaleFactors = cms.bool(False),
+    HLTversion = cms.string("HLT")
+       )
+sampleInfo.append(aPSet)
+
+aPSet = cms.PSet(
+    DataSet = cms.string("/ttHJetToNonbb_M125_13TeV_amcatnloFXFX_madspin_pythia8_mWCutfix/RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6_ext1-v1/MINIAODSIM"),
+    EventTotal = cms.int32(10045633),
+    NumberOfLumis = cms.int32(52144),
+    MaxLumiBlock = cms.int32(52411),
+    EventType = cms.string("MC"),
+    KeyName = cms.string("TT"),
+    DataCard = cms.string("ttHJetToNonbb"),
+    CrossSection = cms.double(0.2151),
+    FilterEff = cms.double(1.0),
+    CodeVersion = cms.double(3.0),
+    ProductionInfo = cms.string("Run2016_B_C_D_E_F_G_H"),
+    RecoilCorrection = cms.string("NONE"),
+    MetSystematicType = cms.string("NONE"),
+    KeepTheoryScaleFactors = cms.bool(False),
+    HLTversion = cms.string("HLT")
+       )
+sampleInfo.append(aPSet)
 
 
 aPSet = cms.PSet(
@@ -613,6 +732,26 @@ sampleInfo.append(aPSet)
 
 
 aPSet = cms.PSet(
+    DataSet = cms.string("/WZTo3LNu_TuneCUETP8M1_13TeV-powheg-pythia8/RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/MINIAODSIM"),
+    EventTotal = cms.int32(1993200),
+    NumberOfLumis = cms.int32(9969),
+    MaxLumiBlock = cms.int32(10003),
+    EventType = cms.string("MC"),
+    KeyName = cms.string("WZTo3LNu"),
+    DataCard = cms.string("VV"),
+    CrossSection = cms.double(4.43),
+    FilterEff = cms.double(1.0),
+    CodeVersion = cms.double(3.0),
+    ProductionInfo = cms.string("Run2016_B_C_D_E_F_G_H"),
+    RecoilCorrection = cms.string("NONE"),
+    MetSystematicType = cms.string("NONE"),
+    KeepTheoryScaleFactors = cms.bool(False),
+    HLTversion = cms.string("HLT")
+       )
+sampleInfo.append(aPSet)
+
+
+aPSet = cms.PSet(
     DataSet = cms.string("/WZTo1L1Nu2Q_13TeV_amcatnloFXFX_madspin_pythia8/RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v3/MINIAODSIM"),
     EventTotal = cms.int32(24221923),
     NumberOfLumis = cms.int32(118042),
@@ -697,6 +836,47 @@ sampleInfo.append(aPSet)
 
 
 aPSet = cms.PSet(
+    DataSet = cms.string("/WWToLNuQQ_13TeV-powheg/RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/MINIAODSIM"),
+    EventTotal = cms.int32(1999200),
+    NumberOfLumis = cms.int32(9996),
+    MaxLumiBlock = cms.int32(10000),
+    EventType = cms.string("MC"),
+    KeyName = cms.string("WWToLNuQQ"),
+    DataCard = cms.string("VV"),
+    CrossSection = cms.double(10.71),
+    FilterEff = cms.double(1.0),
+    CodeVersion = cms.double(3.0),
+    ProductionInfo = cms.string("Run2016_B_C_D_E_F_G_H"),
+    RecoilCorrection = cms.string("NONE"),
+    MetSystematicType = cms.string("NONE"),
+    KeepTheoryScaleFactors = cms.bool(False),
+    HLTversion = cms.string("HLT")
+       )
+sampleInfo.append(aPSet)
+
+
+
+aPSet = cms.PSet(
+    DataSet = cms.string("/WWToLNuQQ_13TeV-powheg/RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6_ext1-v1/MINIAODSIM"),
+    EventTotal = cms.int32(6998600),
+    NumberOfLumis = cms.int32(34993),
+    MaxLumiBlock = cms.int32(35000),
+    EventType = cms.string("MC"),
+    KeyName = cms.string("WWToLNuQQext1"),
+    DataCard = cms.string("VV"),
+    CrossSection = cms.double(10.71),
+    FilterEff = cms.double(1.0),
+    CodeVersion = cms.double(3.0),
+    ProductionInfo = cms.string("Run2016_B_C_D_E_F_G_H"),
+    RecoilCorrection = cms.string("NONE"),
+    MetSystematicType = cms.string("NONE"),
+    KeepTheoryScaleFactors = cms.bool(False),
+    HLTversion = cms.string("HLT")
+       )
+sampleInfo.append(aPSet)
+
+
+aPSet = cms.PSet(
     DataSet = cms.string("/ZZTo2L2Q_13TeV_amcatnloFXFX_madspin_pythia8/RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/MINIAODSIM"),
     EventTotal = cms.int32(15345572),
     NumberOfLumis = cms.int32(73853),
@@ -737,70 +917,6 @@ aPSet = cms.PSet(
 sampleInfo.append(aPSet)
 
 
-
-aPSet = cms.PSet(
-    DataSet = cms.string("/EWKWMinus2Jets_WToLNu_M-50_13TeV-madgraph-pythia8/RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/MINIAODSIM"),
-    EventTotal = cms.int32(489205),
-    NumberOfLumis = cms.int32(2447),
-    MaxLumiBlock = cms.int32(2501),
-    EventType = cms.string("MC"),
-    KeyName = cms.string("EWKWMinus2Jets_WToLNu_M-50"),
-    DataCard = cms.string("EWK"),
-    CrossSection = cms.double(20.25000),
-    FilterEff = cms.double(1.0),
-    CodeVersion = cms.double(3.0),
-    ProductionInfo = cms.string("Run2016_B_C_D_E_F_G_H"),
-    RecoilCorrection = cms.string("NONE"),
-    MetSystematicType = cms.string("NONE"),
-    KeepTheoryScaleFactors = cms.bool(False),
-    HLTversion = cms.string("HLT")
-       )
-sampleInfo.append(aPSet)
-
-
-
-aPSet = cms.PSet(
-    DataSet = cms.string("/EWKWPlus2Jets_WToLNu_M-50_13TeV-madgraph-pythia8/RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/MINIAODSIM"),
-    EventTotal = cms.int32(496000),
-    NumberOfLumis = cms.int32(2480),
-    MaxLumiBlock = cms.int32(2500),
-    EventType = cms.string("MC"),
-    KeyName = cms.string("EWKWPlus2Jets_WToLNu_M-50"),
-    DataCard = cms.string("EWK"),
-    CrossSection = cms.double(25.62000),
-    FilterEff = cms.double(1.0),
-    CodeVersion = cms.double(3.0),
-    ProductionInfo = cms.string("Run2016_B_C_D_E_F_G_H"),
-    RecoilCorrection = cms.string("NONE"),
-    MetSystematicType = cms.string("NONE"),
-    KeepTheoryScaleFactors = cms.bool(False),
-    HLTversion = cms.string("HLT")
-       )
-sampleInfo.append(aPSet)
-
-
-
-aPSet = cms.PSet(
-    DataSet = cms.string("/EWKZ2Jets_ZToLL_M-50_13TeV-madgraph-pythia8/RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/MINIAODSIM"),
-    EventTotal = cms.int32(150000),
-    NumberOfLumis = cms.int32(751),
-    MaxLumiBlock = cms.int32(751),
-    EventType = cms.string("MC"),
-    KeyName = cms.string("EWKZ2Jets_ZToLL_M-50"),
-    DataCard = cms.string("EWK"),
-    CrossSection = cms.double(3.98700),
-    FilterEff = cms.double(1.0),
-    CodeVersion = cms.double(3.0),
-    ProductionInfo = cms.string("Run2016_B_C_D_E_F_G_H"),
-    RecoilCorrection = cms.string("NONE"),
-    MetSystematicType = cms.string("NONE"),
-    KeepTheoryScaleFactors = cms.bool(False),
-    HLTversion = cms.string("HLT")
-       )
-sampleInfo.append(aPSet)
-
-
-
 aPSet = cms.PSet(
     DataSet = cms.string("/EWKZ2Jets_ZToNuNu_13TeV-madgraph-pythia8/RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/MINIAODSIM"),
     EventTotal = cms.int32(296800),
@@ -823,6 +939,26 @@ sampleInfo.append(aPSet)
 
 
 aPSet = cms.PSet(
+    DataSet = cms.string("/EWKZ2Jets_ZToNuNu_13TeV-madgraph-pythia8/RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6_ext1-v1/MINIAODSIM"),
+    EventTotal = cms.int32(300000),
+    NumberOfLumis = cms.int32(1708),
+    MaxLumiBlock = cms.int32(1708),
+    EventType = cms.string("MC"),
+    KeyName = cms.string("EWKZ2Jets_ZToNuNu--ext1-v1"),
+    DataCard = cms.string("EWK"),
+    CrossSection = cms.double(10.01000),
+    FilterEff = cms.double(1.0),
+    CodeVersion = cms.double(2.0),
+    ProductionInfo = cms.string("Run2016_B_C_D_E_F_G_H"),
+    RecoilCorrection = cms.string("NONE"),
+    MetSystematicType = cms.string("NONE"),
+    KeepTheoryScaleFactors = cms.bool(False),
+    HLTversion = cms.string("HLT"),
+       )
+sampleInfo.append(aPSet)
+
+
+aPSet = cms.PSet(
     DataSet = cms.string("/GluGluHToTauTau_M125_13TeV_powheg_pythia8/RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/MINIAODSIM"),
     EventTotal = cms.int32(1471061),
     NumberOfLumis = cms.int32(7363),
@@ -840,7 +976,6 @@ aPSet = cms.PSet(
     HLTversion = cms.string("HLT")
        )
 sampleInfo.append(aPSet)
-
 
 
 aPSet = cms.PSet(
@@ -1290,7 +1425,7 @@ aPSet = cms.PSet(
     NumberOfLumis = cms.int32(2551),
     MaxLumiBlock = cms.int32(2555),
     EventType = cms.string("MC"),
-    KeyName = cms.string("VBFHToWW2L2Nu_M125"),
+    KeyName = cms.string("VBFHToWWTo2L2Nu_M125"),
     DataCard = cms.string("SMHIGGS"),
     CrossSection = cms.double(0.0858),
     FilterEff = cms.double(1.0),
@@ -1303,6 +1438,106 @@ aPSet = cms.PSet(
        )
 sampleInfo.append(aPSet)
 
+
+aPSet = cms.PSet(
+    DataSet = cms.string("/GluGluHToWWTo2L2Nu_M125_13TeV_powheg_JHUgen_pythia8/RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/MINIAODSIM"),
+    EventTotal = cms.int32(492200),
+    NumberOfLumis = cms.int32(2463),
+    MaxLumiBlock = cms.int32(2502),
+    EventType = cms.string("MC"),
+    KeyName = cms.string("GluGluHToWWTo2L2Nu_M125---v1"),
+    DataCard = cms.string("SMHIGGS"),
+    CrossSection = cms.double(1.00100),
+    FilterEff = cms.double(1.0),
+    CodeVersion = cms.double(2.0),
+    ProductionInfo = cms.string("Run2016_B_C_D_E_F_G_H"),
+    RecoilCorrection = cms.string("NONE"),
+    MetSystematicType = cms.string("NONE"),
+    KeepTheoryScaleFactors = cms.bool(False),
+    HLTversion = cms.string("HLT"),
+       )
+sampleInfo.append(aPSet)
+
+
+
+aPSet = cms.PSet(
+    DataSet = cms.string("/WplusHToTauTau_M125_13TeV_powheg_pythia8/RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/MINIAODSIM"),
+    EventTotal = cms.int32(428036),
+    NumberOfLumis = cms.int32(2217),
+    MaxLumiBlock = cms.int32(2331),
+    EventType = cms.string("MC"),
+    KeyName = cms.string("WplusHToTauTau"),
+    DataCard = cms.string("SMHIGGS"),
+    CrossSection = cms.double(0.052),
+    FilterEff = cms.double(1.0),
+    CodeVersion = cms.double(3.0),
+    ProductionInfo = cms.string("Run2016_B_C_D_E_F_G_H"),
+    RecoilCorrection = cms.string("NONE"),
+    MetSystematicType = cms.string("NONE"),
+    KeepTheoryScaleFactors = cms.bool(False),
+    HLTversion = cms.string("HLT")
+       )
+sampleInfo.append(aPSet)
+
+
+aPSet = cms.PSet(
+    DataSet = cms.string("/WminusHToTauTau_M125_13TeV_powheg_pythia8/RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/MINIAODSIM"),
+    EventTotal = cms.int32(445200),
+    NumberOfLumis = cms.int32(2226),
+    MaxLumiBlock = cms.int32(2250),
+    EventType = cms.string("MC"),
+    KeyName = cms.string("WminusHToTauTau"),
+    DataCard = cms.string("SMHIGGS"),
+    CrossSection = cms.double(0.0334),
+    FilterEff = cms.double(1.0),
+    CodeVersion = cms.double(3.0),
+    ProductionInfo = cms.string("Run2016_B_C_D_E_F_G_H"),
+    RecoilCorrection = cms.string("NONE"),
+    MetSystematicType = cms.string("NONE"),
+    KeepTheoryScaleFactors = cms.bool(False),
+    HLTversion = cms.string("HLT")
+       )
+sampleInfo.append(aPSet)
+
+
+aPSet = cms.PSet(
+    DataSet = cms.string("/EWKWMinus2Jets_WToLNu_M-50_13TeV-madgraph-pythia8/RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/MINIAODSIM"),
+    EventTotal = cms.int32(489205),
+    NumberOfLumis = cms.int32(2447),
+    MaxLumiBlock = cms.int32(2501),
+    EventType = cms.string("MC"),
+    KeyName = cms.string("EWKWMinus2Jets_WToLNu_M-50"),
+    DataCard = cms.string("EWK"),
+    CrossSection = cms.double(20.25000),
+    FilterEff = cms.double(1.0),
+    CodeVersion = cms.double(3.0),
+    ProductionInfo = cms.string("Run2016_B_C_D_E_F_G_H"),
+    RecoilCorrection = cms.string("NONE"),
+    MetSystematicType = cms.string("NONE"),
+    KeepTheoryScaleFactors = cms.bool(False),
+    HLTversion = cms.string("HLT")
+       )
+sampleInfo.append(aPSet)
+
+
+aPSet = cms.PSet(
+    DataSet = cms.string("/EWKWMinus2Jets_WToLNu_M-50_13TeV-madgraph-pythia8/RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6_ext1-v1/MINIAODSIM"),
+    EventTotal = cms.int32(489205),
+    NumberOfLumis = cms.int32(2776),
+    MaxLumiBlock = cms.int32(2831),
+    EventType = cms.string("MC"),
+    KeyName = cms.string("EWKWMinus2Jets_WToLNu_M-50--ext1-v1"),
+    DataCard = cms.string("EWK"),
+    CrossSection = cms.double(20.25000),
+    FilterEff = cms.double(1.0),
+    CodeVersion = cms.double(3.0),
+    ProductionInfo = cms.string("Run2016_B_C_D_E_F_G_H"),
+    RecoilCorrection = cms.string("NONE"),
+    MetSystematicType = cms.string("NONE"),
+    KeepTheoryScaleFactors = cms.bool(False),
+    HLTversion = cms.string("HLT")
+       )
+sampleInfo.append(aPSet)
 
 aPSet = cms.PSet(
     DataSet = cms.string("/EWKWMinus2Jets_WToLNu_M-50_13TeV-madgraph-pythia8/RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6_ext2-v1/MINIAODSIM"),
@@ -1323,6 +1558,25 @@ aPSet = cms.PSet(
        )
 sampleInfo.append(aPSet)
 
+
+aPSet = cms.PSet(
+    DataSet = cms.string("/EWKWPlus2Jets_WToLNu_M-50_13TeV-madgraph-pythia8/RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/MINIAODSIM"),
+    EventTotal = cms.int32(496000),
+    NumberOfLumis = cms.int32(2480),
+    MaxLumiBlock = cms.int32(2500),
+    EventType = cms.string("MC"),
+    KeyName = cms.string("EWKWPlus2Jets_WToLNu_M-50"),
+    DataCard = cms.string("EWK"),
+    CrossSection = cms.double(25.62000),
+    FilterEff = cms.double(1.0),
+    CodeVersion = cms.double(3.0),
+    ProductionInfo = cms.string("Run2016_B_C_D_E_F_G_H"),
+    RecoilCorrection = cms.string("NONE"),
+    MetSystematicType = cms.string("NONE"),
+    KeepTheoryScaleFactors = cms.bool(False),
+    HLTversion = cms.string("HLT")
+       )
+sampleInfo.append(aPSet)
 
 
 aPSet = cms.PSet(
@@ -1366,6 +1620,25 @@ aPSet = cms.PSet(
 sampleInfo.append(aPSet)
 
 
+aPSet = cms.PSet(
+    DataSet = cms.string("/EWKZ2Jets_ZToLL_M-50_13TeV-madgraph-pythia8/RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/MINIAODSIM"),
+    EventTotal = cms.int32(150000),
+    NumberOfLumis = cms.int32(751),
+    MaxLumiBlock = cms.int32(751),
+    EventType = cms.string("MC"),
+    KeyName = cms.string("EWKZ2Jets_ZToLL_M-50"),
+    DataCard = cms.string("EWK"),
+    CrossSection = cms.double(3.98700),
+    FilterEff = cms.double(1.0),
+    CodeVersion = cms.double(3.0),
+    ProductionInfo = cms.string("Run2016_B_C_D_E_F_G_H"),
+    RecoilCorrection = cms.string("NONE"),
+    MetSystematicType = cms.string("NONE"),
+    KeepTheoryScaleFactors = cms.bool(False),
+    HLTversion = cms.string("HLT")
+       )
+sampleInfo.append(aPSet)
+
 
 aPSet = cms.PSet(
     DataSet = cms.string("/EWKZ2Jets_ZToLL_M-50_13TeV-madgraph-pythia8/RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6_ext1-v1/MINIAODSIM"),
@@ -1406,49 +1679,6 @@ aPSet = cms.PSet(
     HLTversion = cms.string("HLT"),
        )
 sampleInfo.append(aPSet)
-
-
-
-aPSet = cms.PSet(
-    DataSet = cms.string("/EWKZ2Jets_ZToNuNu_13TeV-madgraph-pythia8/RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6_ext1-v1/MINIAODSIM"),
-    EventTotal = cms.int32(300000),
-    NumberOfLumis = cms.int32(1708),
-    MaxLumiBlock = cms.int32(1708),
-    EventType = cms.string("MC"),
-    KeyName = cms.string("EWKZ2Jets_ZToNuNu--ext1-v1"),
-    DataCard = cms.string("EWK"),
-    CrossSection = cms.double(10.01000),
-    FilterEff = cms.double(1.0),
-    CodeVersion = cms.double(2.0),
-    ProductionInfo = cms.string("Run2016_B_C_D_E_F_G_H"),
-    RecoilCorrection = cms.string("NONE"),
-    MetSystematicType = cms.string("NONE"),
-    KeepTheoryScaleFactors = cms.bool(False),
-    HLTversion = cms.string("HLT"),
-       )
-sampleInfo.append(aPSet)
-
-
-
-aPSet = cms.PSet(
-    DataSet = cms.string("/GluGluHToWWTo2L2Nu_M125_13TeV_powheg_JHUgen_pythia8/RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/MINIAODSIM"),
-    EventTotal = cms.int32(492200),
-    NumberOfLumis = cms.int32(2463),
-    MaxLumiBlock = cms.int32(2502),
-    EventType = cms.string("MC"),
-    KeyName = cms.string("GluGluHToWWTo2L2Nu_M125---v1"),
-    DataCard = cms.string("SMHIGGS"),
-    CrossSection = cms.double(1.00100),
-    FilterEff = cms.double(1.0),
-    CodeVersion = cms.double(2.0),
-    ProductionInfo = cms.string("Run2016_B_C_D_E_F_G_H"),
-    RecoilCorrection = cms.string("NONE"),
-    MetSystematicType = cms.string("NONE"),
-    KeepTheoryScaleFactors = cms.bool(False),
-    HLTversion = cms.string("HLT"),
-       )
-sampleInfo.append(aPSet)
-
 
 
 aPSet = cms.PSet(
@@ -1512,6 +1742,140 @@ aPSet = cms.PSet(
        )
 sampleInfo.append(aPSet)
 
+aPSet = cms.PSet(
+    DataSet = cms.string("/WWTo2L2Nu_13TeV-powheg/RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/MINIAODSIM"),
+    EventTotal = cms.int32(1999000),
+    NumberOfLumis = cms.int32(10073),
+    MaxLumiBlock = cms.int32(9999),
+    EventType = cms.string("MC"),
+    KeyName = cms.string("WWTo2L2Nu"),
+    DataCard = cms.string("VV"),
+    CrossSection = cms.double(12.178),
+    FilterEff = cms.double(1.0),
+    CodeVersion = cms.double(2.0),
+    ProductionInfo = cms.string("Run2016_B_C_D_E_F_G_H"),
+    RecoilCorrection = cms.string("NONE"),
+    MetSystematicType = cms.string("NONE"),
+    KeepTheoryScaleFactors = cms.bool(False),
+    HLTversion = cms.string("HLT"),
+       )
+sampleInfo.append(aPSet)
+
+
+aPSet = cms.PSet(
+    DataSet = cms.string("/WWTo2L2Nu_DoubleScattering_13TeV-pythia8/RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/MINIAODSIM"),
+    EventTotal = cms.int32(999367),
+    NumberOfLumis = cms.int32(6315),
+    MaxLumiBlock = cms.int32(6319),
+    EventType = cms.string("MC"),
+    KeyName = cms.string("WWTo2L2Nu_DoubleScattering"),
+    DataCard = cms.string("VV"),
+    CrossSection = cms.double(1.62),
+    FilterEff = cms.double(1.0),
+    CodeVersion = cms.double(3.0),
+    ProductionInfo = cms.string("Run2016_B_C_D_E_F_G_H"),
+    RecoilCorrection = cms.string("NONE"),
+    MetSystematicType = cms.string("NONE"),
+    KeepTheoryScaleFactors = cms.bool(False),
+    HLTversion = cms.string("HLT")
+       )
+sampleInfo.append(aPSet)
+
+aPSet = cms.PSet(
+    DataSet = cms.string("/WWJJToLNuLNu_EWK_noTop_13TeV-madgraph-pythia8/RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/MINIAODSIM"),
+    EventTotal = cms.int32(499500),
+    NumberOfLumis = cms.int32(2997),
+    MaxLumiBlock = cms.int32(3000),
+    EventType = cms.string("MC"),
+    KeyName = cms.string("WWJJToLNuLNu_EWK_noTop"),
+    DataCard = cms.string("VV"),
+    CrossSection = cms.double(0.3452),
+    FilterEff = cms.double(1.0),
+    CodeVersion = cms.double(3.0),
+    ProductionInfo = cms.string("Run2016_B_C_D_E_F_G_H"),
+    RecoilCorrection = cms.string("NONE"),
+    MetSystematicType = cms.string("NONE"),
+    KeepTheoryScaleFactors = cms.bool(False),
+    HLTversion = cms.string("HLT")
+       )
+sampleInfo.append(aPSet)
+
+aPSet = cms.PSet(
+    DataSet = cms.string("/WpWpJJ_QCD_TuneCUETP8M1_13TeV-madgraph-pythia8/RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/MINIAODSIM"),
+    EventTotal = cms.int32(146436),
+    NumberOfLumis = cms.int32(904),
+    MaxLumiBlock = cms.int32(926),
+    EventType = cms.string("MC"),
+    KeyName = cms.string("WpWpJJ_QCD"),
+    DataCard = cms.string("VV"),
+    CrossSection = cms.double(0.02615),
+    FilterEff = cms.double(1.0),
+    CodeVersion = cms.double(3.0),
+    ProductionInfo = cms.string("Run2016_B_C_D_E_F_G_H"),
+    RecoilCorrection = cms.string("NONE"),
+    MetSystematicType = cms.string("NONE"),
+    KeepTheoryScaleFactors = cms.bool(False),
+    HLTversion = cms.string("HLT")
+       )
+sampleInfo.append(aPSet)
+
+aPSet = cms.PSet(
+    DataSet = cms.string("/WpWpJJ_EWK_TuneCUETP8M1_13TeV-madgraph-pythia8/RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/MINIAODSIM"),
+    EventTotal = cms.int32(150000),
+    NumberOfLumis = cms.int32(1215),
+    MaxLumiBlock = cms.int32(1215),
+    EventType = cms.string("MC"),
+    KeyName = cms.string("WpWpJJ_EWK"),
+    DataCard = cms.string("VV"),
+    CrossSection = cms.double(0.02696),
+    FilterEff = cms.double(1.0),
+    CodeVersion = cms.double(3.0),
+    ProductionInfo = cms.string("Run2016_B_C_D_E_F_G_H"),
+    RecoilCorrection = cms.string("NONE"),
+    MetSystematicType = cms.string("NONE"),
+    KeepTheoryScaleFactors = cms.bool(False),
+    HLTversion = cms.string("HLT")
+       )
+sampleInfo.append(aPSet)
+
+aPSet = cms.PSet(
+    DataSet = cms.string("/GluGluWWTo2L2Nu_MCFM_13TeV/RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/MINIAODSIM"),
+    EventTotal = cms.int32(500000),
+    NumberOfLumis = cms.int32(2500),
+    MaxLumiBlock = cms.int32(2500),
+    EventType = cms.string("MC"),
+    KeyName = cms.string("GluGluWWTo2L2Nu"),
+    DataCard = cms.string("VV"),
+    CrossSection = cms.double(0.59),
+    FilterEff = cms.double(1.0),
+    CodeVersion = cms.double(3.0),
+    ProductionInfo = cms.string("Run2016_B_C_D_E_F_G_H"),
+    RecoilCorrection = cms.string("NONE"),
+    MetSystematicType = cms.string("NONE"),
+    KeepTheoryScaleFactors = cms.bool(False),
+    HLTversion = cms.string("HLT")
+       )
+sampleInfo.append(aPSet)
+
+
+aPSet = cms.PSet(
+    DataSet = cms.string("/ZZTo2L2Nu_13TeV_powheg_pythia8/RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/MINIAODSIM"),
+    EventTotal = cms.int32(8842475),
+    NumberOfLumis = cms.int32(46879),
+    MaxLumiBlock = cms.int32(47461),
+    EventType = cms.string("MC"),
+    KeyName = cms.string("ZZTo2L2Nu"),
+    DataCard = cms.string("VV"),
+    CrossSection = cms.double(0.564),
+    FilterEff = cms.double(1.0),
+    CodeVersion = cms.double(2.0),
+    ProductionInfo = cms.string("Run2016_B_C_D_E_F_G_H"),
+    RecoilCorrection = cms.string("NONE"),
+    MetSystematicType = cms.string("NONE"),
+    KeepTheoryScaleFactors = cms.bool(False),
+    HLTversion = cms.string("HLT"),
+       )
+sampleInfo.append(aPSet)
 
 
 ################################
