@@ -2562,15 +2562,31 @@ void FlatTupleGenerator::handleSVFitCall(const edm::Event& iEvent, const edm::Ev
   svFitAlgorithm.shiftVisPt(true, inputFile_visPtResolution);
 
   svFitAlgorithm.integrateMarkovChain();
+  
   //  svFitAlgorithm.integrateVEGAS();
 
   /* set the fitted diTau pt, eta, phi, mass, and MT */
 
-  double temp_SVMass = svFitAlgorithm.getMass();
+  /*  double temp_SVMass = svFitAlgorithm.getMass();
   double temp_SVPt = svFitAlgorithm.pt();
   double temp_SVEta = svFitAlgorithm.eta();
   double temp_SVPhi = svFitAlgorithm.phi();
   double temp_SVTransverseMass = svFitAlgorithm.transverseMass();
+  */
+
+  /* set the fitted MET */
+
+  /*TLorentzVector temp_SVFitted_MET(0.,0.,0.,0.);
+  temp_SVFitted_MET.SetPxPyPzE(svFitAlgorithm.fittedMET().x(),svFitAlgorithm.fittedMET().y(),svFitAlgorithm.fittedMET().z(),0.); 
+  */
+
+  /* Dummy variables with no SVFit , set the fitted diTau pt, eta, phi, mass, and MT */
+
+  double temp_SVMass = -999.0;                                                                                                                                             
+  double temp_SVPt = -999.0;
+  double temp_SVEta = -999.0;
+  double temp_SVPhi = -999.0;
+  double temp_SVTransverseMass = -999.0;
 
   /* set the fitted MET */
 
@@ -2747,7 +2763,6 @@ NtupleEvent currentPair)
     genMETphi = currentPair.pfMET()[0].genMET()->phi();
     genMETeta = currentPair.pfMET()[0].genMET()->eta();
     genMETmass = currentPair.pfMET()[0].genMET()->mass();
-
 
   }
 
