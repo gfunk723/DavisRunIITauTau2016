@@ -28,7 +28,7 @@ For Quick Start (on SL6 only, CMSSW_7_6_3 and higher):
 
 		setenv SCRAM_ARCH slc6_amd64_gcc530
 
-		git clone git@github.com:sshalhou/DavisRunIITauTau DavisRunIITauTau
+		git clone git@github.com:gfunk723/DavisRunIITauTau2016 DavisRunIITauTau
 
 		cd DavisRunIITauTau
 
