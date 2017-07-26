@@ -1,0 +1,1 @@
+./DavisRunIITauTau/CrabJobSubmissionHelper/runCrabSubmission.py --isMC=1 --dataSetList="./DavisRunIITauTau/CrabJobSubmissionHelper/DataSetLists/Moriond17_BKG2.txt" --workAreaName="Moriond17_AugustProdV1_local" --outputDatasetTag="Moriond17_AugustProdV1" --dryRun=0
