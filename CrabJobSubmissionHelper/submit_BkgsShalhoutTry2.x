@@ -1,1 +1,0 @@
-./DavisRunIITauTau/CrabJobSubmissionHelper/runCrabSubmission.py --isMC=1 --dataSetList="./DavisRunIITauTau/CrabJobSubmissionHelper/DataSetLists/Moriond17_ShalhoutResubmit.txt" --workAreaName="Moriond17_TRY2_local" --outputDatasetTag="Moriond17_TRY2" --dryRun=0
