@@ -1,6 +1,7 @@
 #!/bin/tcsh
 
 # setup access
+# for fall17
 
 voms-proxy-init -voms cms --valid=72:00
 
