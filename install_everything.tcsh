@@ -11,7 +11,7 @@ source /cvmfs/cms.cern.ch/cmsset_default.csh
 setenv SCRAM_ARCH slc6_amd64_gcc630
 
 if ( -d CMSSW_9_4_0_pre2) then
-        echo 'directory CMSSW_8_0_26_patch1 already exits, doing nothing further'
+        echo 'directory CMSSW_9_4_0_pre2 already exits, doing nothing further'
         exit 1
 endif
 
