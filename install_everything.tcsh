@@ -8,9 +8,9 @@ voms-proxy-init -voms cms --valid=72:00
 # some defaults
 
 source /cvmfs/cms.cern.ch/cmsset_default.csh
-setenv SCRAM_ARCH slc6_amd64_gcc530
+setenv SCRAM_ARCH slc6_amd64_gcc630
 
-if ( -d CMSSW_8_0_26_patch1) then
+if ( -d CMSSW_9_4_0_pre2) then
         echo 'directory CMSSW_8_0_26_patch1 already exits, doing nothing further'
         exit 1
 endif
@@ -18,8 +18,8 @@ endif
 
 # create the working area
 	
-cmsrel CMSSW_8_0_26_patch1
-cd CMSSW_8_0_26_patch1/src/
+cmsrel CMSSW_
+cd CMSSW_9_4_0_pre2/src/
 cmsenv
 
 # set up git
@@ -100,7 +100,7 @@ cd -
 # additional electron MVA ID files
 
 cd $CMSSW_BASE/external
-cd slc6_amd64_gcc530/
+cd slc6_amd64_gcc630
 git clone https://github.com/ikrav/RecoEgamma-ElectronIdentification.git data/RecoEgamma/ElectronIdentification/data
 cd data/RecoEgamma/ElectronIdentification/data
 git checkout egm_id_80X_v1
