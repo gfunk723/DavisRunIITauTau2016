@@ -18,7 +18,7 @@ endif
 
 # create the working area
 	
-cmsrel CMSSW_
+cmsrel CMSSW_9_4_0_pre2
 cd CMSSW_9_4_0_pre2/src/
 cmsenv
 
