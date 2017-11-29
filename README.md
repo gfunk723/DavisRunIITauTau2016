@@ -26,13 +26,13 @@ For Quick Start (on SL6 only, CMSSW_7_6_3 and higher):
 
 		source /cvmfs/cms.cern.ch/cmsset_default.csh
 
-		setenv SCRAM_ARCH slc6_amd64_gcc530
+		setenv SCRAM_ARCH slc6_amd64_gcc630
 
 		git clone git@github.com:gfunk723/DavisRunIITauTau2016 DavisRunIITauTau
 
 		cd DavisRunIITauTau
 
-		git checkout Moriond17_8_0_26patch1
+		git checkout fall17_9_4_0_pre2
 
 		cd -
 
