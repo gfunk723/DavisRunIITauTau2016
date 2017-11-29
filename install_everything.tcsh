@@ -52,36 +52,30 @@ echo " -----> INSTALLING WITHOUT MVA MET "
 # wget https://github.com/rfriese/cmssw/raw/MVAMET2_beta_0.6/RecoMET/METPUSubtraction/data/weightfile.root
 # cd $CMSSW_BASE/src
 
-
-# to allow rerun of tau ID on miniAOD
+# rerun of tau ID on miniAOD
 # see https://twiki.cern.ch/twiki/bin/view/CMSPublic/SWGuidePFTauID#Rerunning_of_the_tau_ID_on_MiniA
-git cms-merge-topic -u cms-tau-pog:CMSSW_8_0_X_tau-pog_miniAOD-backport-tauID
 
 
-# new Moriond17 electron ID 
-git cms-merge-topic ikrav:egm_id_80X_v2 -u
 
-# Add in the new MET filter code needed for 8020X and beyond in 2016 
-# see: https://twiki.cern.ch/twiki/bin/viewauth/CMS/MissingETOptionalFiltersRun2#Notes_regarding_the_ICHEP_datase
-git cms-merge-topic -u cms-met:fromCMSSW_8_0_20_postICHEPfilter
+# new electron ID 
 
 
-# Add in Bad Muon Filter -- we just copied the filter .cc file into our code
-# as CustomFilters/plugins/BadGlobalMuonTagger.cc
-# since this pulls in nearly all of CMSSW
-# this is much less than running : git cms-merge-topic gpetruc:badMuonFilters_80X
-git cms-merge-topic gpetruc:badMuonFilters_80X_v2 -u
+# Add in the new MET filter code
+
+
+
+# Add in Bad Muon Filter 
+
 
 # update to latest and greatest MET 
 
-git cms-merge-topic cms-met:METRecipe_8020 -u
 
 # allow MET E/Gamma recorrection on-the-fly 
 # see https://twiki.cern.ch/twiki/bin/view/CMSPublic/ReMiniAOD03Feb2017Notes#MET_Recipes
-git cms-merge-topic cms-met:METRecipe_80X_part2 -u
+
 
 # SVFIt 
-
+# in case SVFit ever needed
 git clone git@github.com:veelken/SVfit_standalone.git TauAnalysis/SVfitStandalone
 cd TauAnalysis/SVfitStandalone/
 git checkout HIG-16-006
@@ -90,8 +84,7 @@ cd $CMSSW_BASE/src
 # MET RECOIL CORRECTIONS (SAME CODE FOR PF AND MVA MET)
 git clone https://github.com/CMS-HTT/RecoilCorrections.git  HTT-utilities/RecoilCorrections 
 
-# for muon effective area 
-
+# for muon effective area
 git clone -n https://github.com/latinos/UserCode-sixie-Muon-MuonAnalysisTools Muon/MuonAnalysisTools 
 cd Muon/MuonAnalysisTools 
 git checkout master -- interface/MuonEffectiveArea.h 
@@ -99,12 +92,6 @@ cd -
 
 # additional electron MVA ID files
 
-cd $CMSSW_BASE/external
-cd slc6_amd64_gcc630
-git clone https://github.com/ikrav/RecoEgamma-ElectronIdentification.git data/RecoEgamma/ElectronIdentification/data
-cd data/RecoEgamma/ElectronIdentification/data
-git checkout egm_id_80X_v1
-cd $CMSSW_BASE/src
 
 
 # pilup reweight code -- this is done to turn of cout statements
@@ -126,9 +113,6 @@ mv ../../DavisRunIITauTau .
 
 cp DavisRunIITauTau/ExternalFiles/PileUpReWeightFiles/MC_Moriond17_PU25ns_V1.root DavisRunIITauTau/RunTimeDataInput/data/PileUpReWeightFiles/. 
 cp DavisRunIITauTau/ExternalFiles/PileUpReWeightFiles/Data_Pileup_2016_271036-284044_80bins.root DavisRunIITauTau/RunTimeDataInput/data/PileUpReWeightFiles/. 
-
-
-
 
 # get the right JER SF file for this release
 # if new file, need to code the change in runIIoneStep_v0.py and runIIntuple_v0.py
@@ -175,10 +159,8 @@ cp DavisRunIITauTau/ExternalFiles/JECSQLiteFiles/Summer16_23Sep2016V3_MC.db Davi
 
 # Moriond17 : SINCE AFS IS GOING AWAY we'll have to carry these in github from now on
 # for future updates be sure to adjust this to pull the correct files from whatever source they are hosted on
-#mkdir DavisRunIITauTau/RunTimeDataInput/data/BTAGSF
-#cp /afs/cern.ch/user/s/sshalhou/public/CMSSW_8X_MODS/CSVv2_Moriond17_B_H.csv .
-#mv CSVv2_Moriond17_B_H.csv DavisRunIITauTau/RunTimeDataInput/data/BTAGSF/.
 
+#must update
 mkdir DavisRunIITauTau/RunTimeDataInput/data/BTAGSF
 cp DavisRunIITauTau/ExternalFiles/BTAGSF/CSVv2_Moriond17_B_H.csv DavisRunIITauTau/RunTimeDataInput/data/BTAGSF/.
 
